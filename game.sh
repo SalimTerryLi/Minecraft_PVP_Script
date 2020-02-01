@@ -27,6 +27,7 @@ sleep 10
 RUN "title @e[type=minecraft:player] title \"Game start!\""
 RUN "difficulty normal"
 RUN "time set day"
+###########
 # default warning distance 25
 RUN "worldborder warning distance 25"
 # default damage buffer 0
@@ -37,6 +38,9 @@ RUN "worldborder damage amount 0.005"
 RUN "worldborder warning time 30"
 # default size
 RUN "worldborder set 4096"
+# gamerules:
+RUN "gamerule spectatorsGenerateChunks false"
+###########
 sleep 1
 
 #######################################
